@@ -1,119 +1,218 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrapfile/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="bootstrapfile/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Aclonica|Black+Ops+One|Bungee+Inline|Fugaz+One|Love+Ya+Like+A+Sister|Luckiest+Guy|Press+Start+2P|Quando|Righteous|Shojumaru&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">       
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width,initial scale=1"/>       
- <style>
-            #btn{
-                margin-top:30px;
-            }
-            #image{
-                border:2px solid;
-                margin-top:50px;
-                margin-left:22px
-            }
-             .lii{
-                font-size:25px;
-                 font-weight:bold;
-                 list-style-type:none;
-                 font-family:'Quando'
-            }
-            #row2{
-/*                background-image:url("https://lh3.googleusercontent.com/proxy/qlC6om4EMZJVsKjOOG-eMaLdwC-3OLmm76s1D_k2g01kXeKazdwmZNqzrybd_sDUb5ujYKuli_ej0qi6WGfQF_mDOT77qPM-kWyhiv8co-wnMHydtSbBW8O0aJ5k8wUx5KGni_O2pnkFUu2NX3r8IJC5MJ_HX8oC");*/
-            }
-            body{
-                background-image:url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg");
-                background-size:cover;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row" style="height:200px">
-                <div class="col-sm-3">
-                    <img src="Sarthak/mainlogo.png" width="180px" height="170px"/>
-                </div>
-                <div class="col-sm-2">
+<title>EshitInterExport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="bootstrapfile/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="bootstrapfile/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
 
-                </div>
-                <div class="col-sm-2">
-                    <a href="index.html">          <input type="button" class="btn btn-primary" value="HOME" id="btn"> </a>
-                </div>
-                <div class="col-sm-2">
-                    <input type="button" class="btn btn-primary" value="CONTACT US" id="btn">
-                </div>
-                <div class="col-sm-2">
-                    <input type="button" class="btn btn-primary" value="SUPPORT" id="btn">
-                </div>
-            </div>
-           
-            
-                <div class="row" style="height:400px" id="row2">
-                    <div class="col-sm-3"> 
-                        <img src="Sarthak/img1.jpg" width="280px" height="280px" id="image"/>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="Sarthak/mainlogo.png" width="150px" height="150px"/>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+   
+    <a href="#" class="w3-bar-item w3-button">Dresses</a>
+      <a href="design.html" class="w3-bar-item w3-button">Collection</a>
+   
+   
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">About us</a>
+</nav>
 
-                    </div>
-                    <div class="col-sm-3"> 
-                        <img src="Sarthak/img2.jpg" width="280px" height="280px"id="image"/>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
 
-                    </div>
-                    <div class="col-sm-3"> 
-                        <img src="Sarthak/img3.jpg" width="280px" height="280px" id="image"/>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-                    </div>
-                    <div class="col-sm-3"> 
-                        <img src="Sarthak/img4.jpg" width="280px" height="280px" id="image"/>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
 
-                    </div>
-                   
-                    <a href="design.html"> <input type="button" class="btn btn-primary" value="MORE DESIGNS" style="margin-top:30px;margin-left:600px;"> </a>
-                  
-                </div>
-            <br>
-            <br>
-            <hr>
-                <div class="row" id="footer" style="height:200px;">
-                    <div class="col-sm-3">
-                        <br>
-                                       <img src="Sarthak/mainlogo.png"    width="210px" height="180px"/> 
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Designs</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
 
-                    </div>
-                    <div class="col-sm-5" >
-                        <br>
-                        <li class="lii" style="margin-left:60px;font-family:'Quando';"> 
-                            CONTACT US
-                        </li>
-                        <br>
-                        <li style="font-size:20px;list-style-type:none;font-family:'Quando';margin-left:60px;";>
-                            Mobile Number : 8447895339
-                            <br>
-                            <span style="margin-left:190px;">             9891137210 </span>
-                        </li>
-                        <br>
-                        <li style="font-size:20px;list-style-type:none;font-family:'Quando';margin-left:60px;";>
-                            Email Address : eiexports1@gmail.com
-                        </li>
-                </div>
-                    <div class='col-sm-4' >
-                        <li class='lii'   style="margin-top:20px;">
-                            SOCIAL MEDIA
-                        </li>
-                        <br>
-                        <i class='fa fa-facebook-official'></i> <a href='' style='text-decoration:none;color:black;' >
-                            <span style="font-size:17px;font-family:'Quando';margin-left:6px";>  Facebook </span> </a>
-                                  
-                    </div>
-                    
-            </div>
-                 </div>
-            
-    </body>
+  <!-- Image header -->
+ 
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="sarthak/img1.jpg" style="width:100%;height:200px;">
+      </div>
+        <br>
+      <div class="w3-container">
+        <img src="sarthak/img2.jpg" style="width:100%;height:200px;">
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="sarthak/img3.jpg" style="width:100%;height:200px;">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+      </div>
+        <br>
+      <div class="w3-container">
+        <img src="sarthak/img4.jpg" style="width:100%;height:200px;">
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="sarthak/img5.jpg" style="width:100%;height:200px;">
+      </div>
+        <br>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="sarthak/img6.jpg" style="width:100%;height:200px;">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="sarthak/img7.jpg" style="width:100%;height:200px;">
+      </div>
+        <br>
+      <div class="w3-container">
+        <img src="sarthak/img8.jpg" style="width:100%;height:200px;">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+      
+      <a href="design.html">     <input type="button" class="btn btn-primary" value="More Collection" style="margin-left:400px;"/> </a>
+    
+  </div>
+  <!-- Subscribe section -->
+ 
+  
+  <!-- Footer -->
+  <br>
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i>EshitInterExport</p>
+        <p><i class="fa fa-fw fa-phone"></i>+91 8447895339</p>
+        <p><i class="fa fa-fw fa-envelope"></i> eiexports1@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Cash</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Internet Banking</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href=""  target="_blank" class="w3-hover-opacity">EshitInterExport</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
 </html>
